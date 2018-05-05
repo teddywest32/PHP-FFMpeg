@@ -40,7 +40,7 @@ class ImageVideoFilter implements AudioFilterInterface
     {
         $commands = array('-loop', 1, '-i', (string) $this->artwork);
 
-        if(!is_null($this->extraFlags)) {
+        if (!is_null($this->extraFlags)) {
             $commands = array_merge($commands, $this->extraFlags);
         }
 
